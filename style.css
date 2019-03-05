@@ -20,3 +20,39 @@
 .nav-link {
   font-size: 24px;
 }
+
+/* Debut Footer */
+.footer-class {
+  background-color: #3B424E;
+  position:absolute;
+  bottom: 0;
+  width:100%;
+  color:white;
+  text-decoration: none;
+}
+
+.footer-img {
+  width: 150px;
+}
+
+.footer-align-img {
+  margin-top: 1%;
+}
+
+@media screen and (max-width: 575px) {
+  .bloc-img {
+    display:none;
+  }
+}
+
+.footer-align {
+  margin-top: 2%;
+}
+
+.footer-align-propos {
+  margin-top: 1%;
+}
+
+.footer-align-media li {
+  display: inline;
+}
