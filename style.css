@@ -1,5 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 body {
   font-family: monospace;
+}
+
+nav {
+  font-family:'Roboto', sans-serif;
+}
+
+h1 {
+  font-family:'Roboto', sans-serif;
+  width: 15%;
+  margin: 0 auto;
+  margin-top: 2%;
 }
 
 /* NAVBAR */
@@ -27,12 +40,6 @@ body {
 }
 
 /* Form */
-
-h1 {
-  width: 15%;
-  margin: 0 auto;
-  margin-top: 2%;
-}
 
 .form-contact {
   width: 80%;
