@@ -1,8 +1,58 @@
-.sertarien {
+/* NAVBAR */
+.navbar {
+  background-color: rgb(240,240,240);
+  position: fixed;
+  width: 100%;
+}
 
+.logo-nav {
+  margin-bottom: 10px;
+  width: 192.5px;
+}
+
+.nav-item {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.nav-link {
+  font-size: 24px;
 }
 
 /* Debut Footer */
 .footer-class {
-  background-color: black;
+  background-color: #3B424E;
+  position:absolute;
+  bottom: 0;
+  width:100%;
+  color:white;
+  text-decoration: none;
+}
+
+.footer-img {
+  width: 150px;
+}
+
+.footer-align-img {
+  margin-top: 1%;
+}
+
+@media screen and (max-width: 575px) {
+  .bloc-img {
+    display:none;
+  }
+}
+
+.footer-align {
+  margin-top: 2%;
+}
+
+.footer-align-propos {
+  margin-top: 1%;
+}
+
+.footer-align-media li {
+  display: inline;
 }
