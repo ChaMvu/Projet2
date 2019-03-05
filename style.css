@@ -24,80 +24,175 @@
 
 /* Cards Index */
 
+.all_the_cards
+{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
 .block_cards
 {
-  width: 300px;
-  height: 450px;
-  margin: 100px;
+  width: 250px;
+  height: 360px;
+  margin: 20px;
   border: solid black 2px;
 }
 
 .photo_miniature
 {
   border-radius: 50%;
-  margin-left: 75px;
-  margin-right: 75px;
-  margin-top: 20px
+  margin-left: 65px;
+  margin-right: 65px;
+  margin-top: 30px
 }
 .nom_prenom
 {
-   width: 170px;
-  height: 70px;
-  margin-left: 65px;
-  margin-right: 65px;
-  margin-top: 20px;
-  border: solid black 2px;
+ width: 160px;
+ height: 50px;
+ margin-left: 42.5px;
+ margin-right: 42.5px;
+ margin-top: 30px;
+ border: solid black 2px;
 }
 
 .description_rapide
 {
-   width: 250px;
-  height: 120px;
-  border: solid black 2px;
-  margin-left: 22.5px;
-  margin-right: 22.5px;
-  margin-top: 20px;
+ width: 200px;
+ height: 70px;
+ border: solid black 2px;
+ margin-left: 22.5px;
+ margin-right: 22.5px;
+ margin-top: 20px;
 }
 
-.bubble
+@media screen and (max-width: 360px) 
 {
-margin: 50px;
-position: relative;
-background-color:white;
-text-align:center;
-width:220px;
-height:100px;
-border:2px solid #555555;
-border-top-right-radius:130px 60px;
-border-top-left-radius:130px 60px;
-border-bottom-right-radius:130px 60px;
-border-bottom-left-radius:130px 60px;
+  .block_cards 
+  {
+    width: 110px;
+    height: 200px;
+    margin: 15px;
+  }
+  .photo_miniature
+  {
+    border-radius: 50%;
+    width: 90%;
+    margin-left: 5.8px;
+    margin-right: 5.8px;
+    margin-top: 10px
+  }
+  .nom_prenom
+  {
+   width: 90px;
+   height: 50px;
+   margin-left: 7.5px;
+   margin-right: 7.5px;
+   margin-top: 20px;
+ }
+ .description_rapide
+ {
+   display: none
+ }
 }
 
-.text
+@media screen and (min-width: 361px) and (max-width: 538px)
 {
-  display: block;
-  font-size: 13px; 
-  width: 170px;
-  height: 60px;
-  margin-top: 18px;
-  margin-left: 20px;
+  .block_cards 
+  {
+    width: 140px;
+    height: 240px;
+    margin: 20px;
+  }
+  .photo_miniature
+  {
+    border-radius: 50%;
+    width: 75%;
+    margin-left: 19px;
+    margin-right: 19px;
+    margin-top: 15px
+  }
+  .nom_prenom
+  {
+   width: 120px;
+   height: 70px;
+   margin-left: 8px;
+   margin-right: 8px;
+   margin-top: 30px;
+ }
+ .description_rapide
+ {
+   display: none
+ }
 }
 
-.arrow_border{
-width:0;
-height:0;
-line-height:0;
-border-bottom:30px solid transparent;
-border-left:30px solid transparent;
-border-right:30px solid #555555;
+@media screen and (min-width: 539px) and (max-width: 556px)
+{
+  .block_cards 
+  {
+    width: 160px;
+    height: 270px;
+    margin: 20px;
+  }
+  .photo_miniature
+  {
+    border-radius: 50%;
+    width: 75%;
+    margin-left: 19px;
+    margin-right: 19px;
+    margin-top: 15px
+  }
+  .nom_prenom
+  {
+   width: 120px;
+   height: 70px;
+   margin-left: 16px;
+   margin-right: 16px;
+   margin-top: 30px;
+ }
+ .description_rapide
+ {
+   display: none
+ }
 }
-.arrow_inner{
-width:0;
-height:0;
-margin-left: -120px;
-line-height:0;
-border-bottom:30px solid transparent;
-border-left:00px solid transparent;
-border-right:30px solid white;
+
+@media screen and (min-width: 557px) and (max-width: 796px)
+{
+  .block_cards 
+  {
+    width: 230px;
+    height: 350px;
+    margin: 20px;
+  }
+  .photo_miniature
+  {
+    border-radius: 50%;
+    width: 75%;
+    margin-left: 28px;
+    margin-right: 28px;
+    margin-top: 15px
+  }
+  .nom_prenom
+  {
+   width: 200px;
+   height: 100px;
+   margin-left: 12px;
+   margin-right: 12px;
+   margin-top: 30px;
+ }
+ .description_rapide
+ {
+   display: none
+ }
 }
+
+@media screen and (min-width: 797px) and (max-width: 1180px) 
+{
+  .block_cards 
+  {
+    margin: 70px;
+  }
+}
+
+
