@@ -1,7 +1,8 @@
 /* NAVBAR */
 .navbar {
+  position: sticky;
+  top: 0;
   background-color: rgb(240,240,240);
-  position: fixed;
   width: 100%;
 }
 
@@ -21,10 +22,51 @@
   font-size: 24px;
 }
 
-/* Debut Footer */
+/* Form */
+
+h1 {
+  width: 15%;
+  margin: 0 auto;
+  margin-top: 2%;
+}
+
+.form-contact {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 6%;
+  box-shadow: 1px 1px 20px 10px #ec6d6a;
+  border-radius: 10px;
+}
+
+.form-area {
+  padding: 5%;
+}
+
+.links {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 6%;
+  margin-bottom: 6%;
+  box-shadow: 1px 1px 20px 10px #ec6d6a;
+  border-radius: 10px;
+}
+
+.wild-breakfeast {
+  padding: 5%;
+}
+
+@media screen and (min-width: 992px) {
+  .form-contact {
+    width: 50%;
+  }
+  .links {
+    width: 50%;
+  }
+}
+/* Footer */
 .footer-class {
   background-color: #3B424E;
-  position:absolute;
+  position: relative;
   bottom: 0;
   width:100%;
   color:white;
