@@ -1,7 +1,6 @@
 /* NAVBAR */
 .navbar {
   background-color: rgb(240,240,240);
-  position: fixed;
   width: 100%;
 }
 
@@ -23,8 +22,8 @@
 
 /* Debut Footer */
 .footer-class {
+  position: relative;
   background-color: #3B424E;
-  position:absolute;
   bottom: 0;
   width:100%;
   color:white;
@@ -55,4 +54,56 @@
 
 .footer-align-media li {
   display: inline;
+}
+
+/*page accueil*/
+
+.align-home {
+  margin-top: 25px;
+}
+
+.bloc-wcs-phenix >div {
+  display: flex;
+  align-items: center;
+}
+
+.bloc-wcs > div {
+  display: flex;
+  align-items: center;
+}
+
+
+.img-facade {
+  width: 100%;
+}
+
+.desc-wcs {
+  margin: 4% auto;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.titre-accueil {
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+.taille-phenix {
+    width: 50%;
+}
+
+@media screen and (min-width: 768px) {
+  .bloc-wcs-phenix {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .taille-phenix {
+    width: 100%
+  }
+}
+
+.logo-promo {
+  display: flex;
+  justify-content: center;
 }
