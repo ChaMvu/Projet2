@@ -10,7 +10,6 @@ nav {
 
 h1 {
   font-family:'Roboto', sans-serif;
-  width: 15%;
   margin: 0 auto;
   margin-top: 2%;
 }
@@ -81,8 +80,8 @@ h1 {
 
 /* Footer */
 .footer-class {
-  background-color: #3B424E;
   position: relative;
+  background-color: #3B424E;
   bottom: 0;
   width:100%;
   color:white;
@@ -113,4 +112,56 @@ h1 {
 
 .footer-align-media li {
   display: inline;
+}
+
+/*page accueil*/
+
+.align-home {
+  margin-top: 25px;
+}
+
+.bloc-wcs-phenix >div {
+  display: flex;
+  align-items: center;
+}
+
+.bloc-wcs > div {
+  display: flex;
+  align-items: center;
+}
+
+
+.img-facade {
+  width: 100%;
+}
+
+.desc-wcs {
+  margin: 4% auto;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.titre-accueil {
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+.taille-phenix {
+    width: 50%;
+}
+
+@media screen and (min-width: 768px) {
+  .bloc-wcs-phenix {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .taille-phenix {
+    width: 100%
+  }
+}
+
+.logo-promo {
+  display: flex;
+  justify-content: center;
 }
