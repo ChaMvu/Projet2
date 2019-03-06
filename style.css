@@ -1,8 +1,9 @@
 /* NAVBAR */
 .navbar {
+  position: sticky;
   background-color: rgb(240,240,240);
-  position: fixed;
   width: 100%;
+  z-index: 9999;
 }
 
 .logo-nav {
@@ -21,7 +22,6 @@
   font-size: 24px;
 }
 
-
 /* Cards Index */
 
 .all_the_cards
@@ -34,10 +34,15 @@
 
 .block_cards
 {
+  margin-top: 70px;
   width: 250px;
   height: 360px;
   margin: 20px;
-  border: solid black 2px;
+  border-top-right-radius:120px 110px;
+  border-top-left-radius:120px 110px;
+  border-bottom-right-radius:120px 110px;
+  border-bottom-left-radius:120px 110px;
+  box-shadow: 1px 1px 20px 5px #ec6d6a;
 }
 
 .photo_miniature
@@ -45,17 +50,35 @@
   border-radius: 50%;
   margin-left: 65px;
   margin-right: 65px;
-  margin-top: 30px
+  margin-top: 30px;
 }
 .nom_prenom
 {
+ display: flex;
+ justify-content: space-around;
  width: 160px;
- height: 50px;
+ border: solid 2px;
+ height: 30px;
  margin-left: 42.5px;
  margin-right: 42.5px;
- margin-top: 30px;
- border: solid black 2px;
+ margin-top: 20px;
 }
+.prenom
+{
+  font-size: 0.8em;
+  text-align: center;
+  margin-bottom: 1.6px;
+  margin-right: -40px;
+  margin-right: -40px;
+
+}
+
+.nom
+{
+  font-size: 0.8em;
+  text-align: center;
+}
+
 
 .description_rapide
 {
@@ -67,8 +90,10 @@
  margin-top: 20px;
 }
 
+
 @media screen and (max-width: 360px) 
 {
+
   .block_cards 
   {
     width: 110px;
@@ -97,7 +122,38 @@
  }
 }
 
-@media screen and (min-width: 361px) and (max-width: 538px)
+@media screen and (min-width: 361px) and (max-width: 376px)
+{
+  .block_cards 
+  {
+    width: 140px;
+    height: 240px;
+    margin: 16px;
+  }
+  .photo_miniature
+  {
+    border-radius: 50%;
+    width: 75%;
+    margin-left: 19px;
+    margin-right: 19px;
+    margin-top: 15px
+  }
+  .nom_prenom
+  {
+   width: 120px;
+   height: 70px;
+   margin-left: 8px;
+   margin-right: 8px;
+   margin-top: 30px;
+ }
+
+ .description_rapide
+ {
+   display: none
+ }
+}
+
+@media screen and (min-width: 376px) and (max-width: 538px)
 {
   .block_cards 
   {
@@ -121,6 +177,7 @@
    margin-right: 8px;
    margin-top: 30px;
  }
+
  .description_rapide
  {
    display: none
@@ -175,6 +232,7 @@
   }
   .nom_prenom
   {
+   display:flex;
    width: 200px;
    height: 100px;
    margin-left: 12px;
@@ -195,4 +253,41 @@
   }
 }
 
+/* Debut Footer */
+
+.footer-class {
+  background-color: #3B424E;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-decoration: none;
+}
+
+.footer-img {
+  width: 150px;
+}
+
+.footer-align-img {
+  margin-top: 1%;
+}
+
+@media screen and (max-width: 575px) 
+{
+  .bloc-img {
+    display:none;
+  }
+}
+
+.footer-align {
+  margin-top: 2%;
+}
+
+.footer-align-propos {
+  margin-top: 1%;
+}
+
+.footer-align-media li {
+  display: inline;
+}
 
