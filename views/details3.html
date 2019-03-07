@@ -10,42 +10,43 @@
   <title>powz_klowp</title>
 </head>
 <body>
-  <header>
-    <nav class="navbar navbar-expand-md navbar-light">
-      <a class="navbar-brand" href="#"><img class="logo-nav" src="../images/logo.png" alt="logo"/></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="home.html">Accueil</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Trombinoscope</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="form.html">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
+  <nav class="navbar navbar-expand-md navbar-light fixed-top">
+    <a class="navbar-brand" href="#"><img class="logo-nav" src="../images/logo.png" alt="logo"/></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="home.html">Accueil</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Trombinoscope</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="form.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
   <main>
-    <h1>Détails</h1>
-    <section class="details row justify-content-center">
-      <img class="col-xs-12 col-sm-3 img-details" src="../images/arnaud.png" alt="">
-      <div class="details-desc col-xs-12 col-sm-9">
-        <ul>
-          <li><span class="list-desc">NOM Prénom :</span> AUZOU Arnaud</li>
-          <li><span class="list-desc">Date de naissance :</span> 18/07/1985</li>
-          <li><span class="list-desc">Ville :</span> Bordeaux</li>
-          <li><span class="list-desc">Cursus :</span> PHP</li>
-        </ul>
-        <p class="bio">Après de multiples expériences professionnelles dans lesquelles je ne parvenais pas à trouver ma place, j'ai fait le choix de m'orienter vers le métier de développeur web et mobile.En effet, j'ai pu constater que le manque d'apprentissage une fois en poste me posait problème. L'évolution constante des langages informatique demandent une veille constante et une forte capacité d'auto-formation et c'est ce qui m'attire le plus dans ce domaine. De plus, la résolution de problèmes me permet de m'épanouir car leurs résolutions demandent une capacité d'abstraction que je cherche à développer.
-          De nature patiente et déterminée, je saurai m'intégrer à toutes équipes avec plaisir.</p>
+    <section class="details">
+      <h1>Détails</h1>
+      <div class="details-card row justify-content-center">
+        <img class="col-xs-12 col-sm-3 img-details" src="../images/arnaud.png" alt="">
+        <div class="details-desc col-xs-12 col-sm-9">
+          <ul>
+            <li><span class="list-desc">NOM Prénom :</span> AUZOU Arnaud</li>
+            <li><span class="list-desc">Date de naissance :</span> 18/07/1985</li>
+            <li><span class="list-desc">Ville :</span> Bordeaux</li>
+            <li><span class="list-desc">Cursus :</span> PHP</li>
+          </ul>
+          <p class="bio">Après de multiples expériences professionnelles dans lesquelles je ne parvenais pas à trouver ma place, j'ai fais le choix de m'orienter vers le métier de développeur web et mobile. En effet, j'ai pu constater que le manque d'apprentissage une fois en poste me posait problème. L'évolution constante des langages informatiques demande une veille constante et une forte capacité d'auto-formation et c'est ce qui m'attire le plus dans ce domaine. De plus, la résolution de problèmes me permet de m'épanouir car ils demandent une capacité d'abstraction que je cherche à développer.
+            De nature patient et déterminé, je saurai m'intégrer à toutes équipes avec plaisir.</p>
+          </div>
         </div>
-      </section>
+      <a href="index.html" class="btn btn-outline-primary btn-retour">Retour à la liste</a>
+    </section>
     </main>
     <footer>
       <div class="container-fluid footer-class">
@@ -89,5 +90,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="../script.js"></script>
   </body>
   </html>

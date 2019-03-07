@@ -1,18 +1,26 @@
-@import url('https://fonts.googleapis.com/css?family=Prosto+One');
+@import url('https://fonts.googleapis.com/css?family=Arvo');
 @import url('https://fonts.googleapis.com/css?family=Neucha');
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 body {
   font-family:'Neucha', cursive;
+  height: auto;
+}
+
+header {
+  height: auto;
 }
 
 nav {
-  font-family:'Roboto', sans-serif;
+  font-family:'Arvo', sans-serif;
 }
 
+
 h1 {
-  font-family:'Prosto One', cursive;
+  font-family:'Arvo', serif;
   margin: 0 auto;
   margin-top: 2%;
+  font-size: 35px;
+  color: #ec6d6a;
 }
 
 /* NAVBAR */
@@ -20,9 +28,14 @@ h1 {
 .navbar {
   position: sticky;
   top: 0;
+  transition: 1500ms ease;
   background-color: rgb(240,240,240);
   width: 100%;
   z-index: 9999;
+}
+
+.navbar.scrolled {
+  background-color: rgba(240,240,240,0.8);
 }
 
 .logo-nav {
@@ -142,13 +155,13 @@ h1, h2
 }
 .nom_prenom
 {
- display: flex;
- justify-content: space-around;
- width: 160px;
- height: 30px;
- margin-left: 42.5px;
- margin-right: 42.5px;
- margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+  width: 160px;
+  height: 30px;
+  margin-left: 42.5px;
+  margin-right: 42.5px;
+  margin-top: 10px;
 }
 .prenom
 {
@@ -171,14 +184,14 @@ h1, h2
 
 .Citation
 {
- width: 200px;
- height: 70px;
- margin-left: 22.5px;
- margin-right: 22.5px;
- margin-top: 20px;
- text-align: center;
- font-size: 20px;
- font-style: italic;
+  width: 200px;
+  height: 70px;
+  margin-left: 22.5px;
+  margin-right: 22.5px;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 20px;
+  font-style: italic;
 }
 
 
@@ -201,26 +214,26 @@ h1, h2
   }
   .nom_prenom
   {
-   width: 90px;
-   height: 50px;
-   margin-left: 7.5px;
-   margin-right: 7.5px;
-   margin-top: 20px;
- }
- .Citation
- {
-   display: none
- }
- .nom
- {
-  display: none;
-}
+    width: 90px;
+    height: 50px;
+    margin-left: 7.5px;
+    margin-right: 7.5px;
+    margin-top: 20px;
+  }
+  .Citation
+  {
+    display: none
+  }
+  .nom
+  {
+    display: none;
+  }
 
-.prenom
-{
-  font-size: 30px;
-  margin-left: -20px;
-}
+  .prenom
+  {
+    font-size: 30px;
+    margin-left: -20px;
+  }
 
 }
 
@@ -243,28 +256,28 @@ h1, h2
   }
   .nom_prenom
   {
-   width: 120px;
-   height: 70px;
-   margin-left: 8px;
-   margin-right: 8px;
-   margin-top: 30px;
- }
+    width: 120px;
+    height: 70px;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-top: 30px;
+  }
 
- .Citation
- {
-   display: none
- }
+  .Citation
+  {
+    display: none
+  }
 
- .nom
- {
-  display: none;
-}
+  .nom
+  {
+    display: none;
+  }
 
-.prenom
-{
-  font-size: 35px;
-  margin-left: -22px;
-}
+  .prenom
+  {
+    font-size: 35px;
+    margin-left: -22px;
+  }
 
 }
 
@@ -286,28 +299,28 @@ h1, h2
   }
   .nom_prenom
   {
-   width: 120px;
-   height: 70px;
-   margin-left: 8px;
-   margin-right: 8px;
-   margin-top: 30px;
- }
+    width: 120px;
+    height: 70px;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-top: 30px;
+  }
 
- .Citation
- {
-   display: none
- }
+  .Citation
+  {
+    display: none
+  }
 
- .nom
- {
-  display: none;
-}
+  .nom
+  {
+    display: none;
+  }
 
-.prenom
-{
-  font-size: 38px;
-  margin-left: -22px;
-}
+  .prenom
+  {
+    font-size: 38px;
+    margin-left: -22px;
+  }
 
 }
 
@@ -329,27 +342,27 @@ h1, h2
   }
   .nom_prenom
   {
-   width: 120px;
-   height: 70px;
-   margin-left: 16px;
-   margin-right: 16px;
-   margin-top: 30px;
- }
- .Citation
- {
-   display: none
- }
+    width: 120px;
+    height: 70px;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 30px;
+  }
+  .Citation
+  {
+    display: none
+  }
 
- .nom
- {
-  display: none;
-}
+  .nom
+  {
+    display: none;
+  }
 
-.prenom
-{
-  font-size: 45px;
-  margin-left: -20px;
-}
+  .prenom
+  {
+    font-size: 45px;
+    margin-left: -20px;
+  }
 }
 
 @media screen and (min-width: 557px) and (max-width: 796px)
@@ -370,28 +383,28 @@ h1, h2
   }
   .nom_prenom
   {
-   display:flex;
-   width: 200px;
-   height: 100px;
-   margin-left: 12px;
-   margin-right: 12px;
-   margin-top: 40px;
- }
- .Citation
- {
-   display: none
- }
+    display:flex;
+    width: 200px;
+    height: 100px;
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-top: 40px;
+  }
+  .Citation
+  {
+    display: none
+  }
 
- .nom
- {
-  font-size: 27px;
-  margin-left: 13px;
-}
+  .nom
+  {
+    font-size: 27px;
+    margin-left: 13px;
+  }
 
-.prenom
-{
-  font-size: 27px;
-}
+  .prenom
+  {
+    font-size: 27px;
+  }
 }
 
 @media screen and (min-width: 797px) and (max-width: 1180px)
@@ -421,16 +434,22 @@ h1, h2
 }
 
 /* Details */
+
 .details {
+  text-align: center;
+}
+
+.details-card {
   position: relative;
   width: 90%;
   margin-left: 6%;
-  margin-bottom: 10%;
+  margin-bottom: 2%;
   border-top-right-radius:120px 110px;
   border-top-left-radius:120px 110px;
   border-bottom-right-radius:120px 110px;
   border-bottom-left-radius:120px 110px;
   box-shadow: 1px 1px 20px 10px #ec6d6a;
+  text-align: left;
 }
 
 .img-details {
@@ -458,6 +477,12 @@ h1, h2
   margin-left: 0%;
   margin-bottom: 10%;
   text-align: center;
+}
+
+
+.btn-retour {
+  position: relative;
+  margin-bottom: 2%;
 }
 
 ul{
